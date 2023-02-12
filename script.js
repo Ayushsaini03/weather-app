@@ -18,7 +18,7 @@ setInterval(() => {
     const minutes = time.getMinutes();
     const ampm = hour >=12 ? 'PM' : 'AM'
     
-    time1.innerHTML = (hours2 <10? '0' + hours2 :hours2) + ':' + (minutes < 10? '0' +minutes : minutes) + ' ' + `<span id="am-pm">${ampm}</span>`
+    time1.innerHTML = (hours2 <10? '0' + hours2 :hours2) + ':' + (minutes < 10? '0' +minutes : minutes) + `<span id="am-pm">${ampm}</span>`
 
     date1.innerHTML = days[day] + ' , ' + date+ ' ' + months[month]
 
@@ -50,6 +50,9 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+city+'&units=metric&
     for(i=0;i<6;i++){
         document.getElementById("img"+(i+1)).src="http://openweathermap.org/img/wn/"+ data.list[i].weather[0].icon+".png"
     }
+    const time = new Date();
+    const day = time.getDay();
+    document.getElementById("day1").innerHTML=days[day]
     document.getElementById("wind").innerHTML=Number(data.list[0].wind.speed)+"m/s"
     document.getElementById("humi").innerHTML=Number(data.list[0].main.humidity)+"%"
     document.getElementById("pres").innerHTML=Number(data.list[0].main.pressure)+" inHg"
@@ -74,6 +77,9 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=delhi&units=metric&app
     for(i=0;i<6;i++){
         document.getElementById("img"+(i+1)).src="http://openweathermap.org/img/wn/"+ data.list[i].weather[0].icon+".png"
     }
+    const time = new Date();
+    const day = time.getDay();
+    document.getElementById("day1").innerHTML=days[day]
     document.getElementById("wind").innerHTML=Number(data.list[0].wind.speed)+"m/s"
     document.getElementById("humi").innerHTML=Number(data.list[0].main.humidity)+"%"
     document.getElementById("pres").innerHTML=Number(data.list[0].main.pressure)+" inHg"
@@ -86,7 +92,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=delhi&units=metric&app
 
 //day
 var d = new Date();
-var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",];
+var weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",];
 
 
 function CheckDay(day){
@@ -101,3 +107,4 @@ function CheckDay(day){
     for(i = 0; i<6; i++){
         document.getElementById("day" + (i+1)).innerHTML = weekday[CheckDay(i)];
     }
+    

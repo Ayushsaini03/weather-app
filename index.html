@@ -10,10 +10,11 @@
 </head>
 
 <body>
-    <video class="back-video" autoplay loop muted plays-inline src="bg.mp4" type="video/mp4"></video>
+<section>
+    <!-- <video class="back-video" autoplay loop muted plays-inline src="bg.mp4" type="video/mp4"></video> -->
     <center>
         <input type="text" name="" placeholder="Search Place" id="ans">
-        <button type="button" onclick="getinfo()" id="fuck">Q</button>
+        <button type="button" onclick="getinfo()" id="fuck">Go</button>
     </center>
     
     <div class="container">
@@ -57,7 +58,7 @@
 
 
             <div class="place-container">
-                <div class="time-zone" id="time-zone"><span id="sex">Asia/Delhi</span> </div>
+                <div class="time-zone" id="time-zone"><span id="sex">Delhi</span> </div>
                 <div id="country" class="country"><span id="lelo"></span></div>
             </div>
         </div>
@@ -69,37 +70,36 @@
             <div class="weather-forecast-item">
                 <div class="day"><span id="day2"></span></div>
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather-icon" class="w-icon" id="img2">
-                <div class="temp"><span id="day1min"></span></div>
-                <div class="temp"><span id="day1max"></span></div>
+                <div class="temp">Min. temp. -<span id="day1min"></span></div>
+                <div class="temp">Max. Temp. -<span id="day1max"></span></div>
             </div>
             <div class="weather-forecast-item">
                 <div class="day"><span id="day3"></span></div>
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather-icon" class="w-icon" id="img3">
-                <div class="temp"><span id="day2min"></span></div>
-                <div class="temp"><span id="day2max"></span></div>
+                <div class="temp">Min. temp. -<span id="day2min"></span></div>
+                <div class="temp">Max. Temp. -<span id="day2max"></span></div>
             </div>
             <div class="weather-forecast-item">
                 <div class="day"><span id="day4"></span></div>
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather-icon" class="w-icon" id="img4">
-                <div class="temp"><span id="day3min"></span></div>
-                <div class="temp"><span id="day3max"></span></div>
+                <div class="temp">Min. temp. -<span id="day3min"></span></div>
+                <div class="temp">Max. Temp. -<span id="day3max"></span></div>
             </div>
             <div class="weather-forecast-item">
                 <div class="day"><span id="day5"></span></div>
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather-icon" class="w-icon" id="img5">
-                <div class="temp">Min <span id="day4min"></span></div>
-                <div class="temp"><span id="day4max"></span></div>
+                <div class="temp">Min. temp. - <span id="day4min"></span></div>
+                <div class="temp">Max. Temp. -<span id="day4max"></span></div>
             </div>
             <div class="weather-forecast-item">
                 <div class="day"><span id="day6"></span></div>
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather-icon" class="w-icon" id="img6">
-                <div class="temp"><span id="day5min"></span></div>
-                <div class="temp"><span id="day5max"></span></div>
+                <div class="temp">Min. temp. -<span id="day5min"></span></div>
+                <div class="temp">Max. Temp. -<span id="day5max"></span></div>
             </div>
-            
-
         </div>
     </div>
+</section>
 
     <script src="script.js"></script>
 </body>
