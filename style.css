@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+body{
+    font-family: 'poppins', 'sans-serif';
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.back-video{
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+}
+
+@media (min-aspect-ratio : 16/9) {
+    .back-video{
+        width: 100vw;
+        height: auto;
+    }
+    
+}
+
+@media (max-aspect-ratio : 16/9) {
+    .back-video{
+        width: auto;
+        height: 100vh;
+    }
+    
+}
+
+.container{
+    padding: 20px 70px;
+    color: #fff;
+}
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.date-container{
+    font-weight: 100;
+}
+
+.date-container .time{
+    font-size: 70px;
+    font-weight: 100; 
+}
+
+.date-container #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.date-container .date{
+    font-size: 30px;
+
+}
+
+.place-container{
+    text-align: end;
+}
+
+.place-container .time-zone{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.place-container .country{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.information .others{
+    display: flex;
+    flex-direction: column;
+    background: rgba(24,24,27,0.6);
+    padding: 17px;
+    border-radius: 15px;
+    margin: 15px 0px;
+    border: 1.5px solid #eee;
+}
+
+.information .others .properties{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.forecast{
+    background: rgba(24,24,27, 0.8);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color: #eee;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+
+}
+.today{
+    border: 2px solid #eee;
+    background-color: #3c3c448e;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 20px
+}
+/* .forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+
+} */
+
+.forecast .today .day{
+    padding: 5px 15px;
+    background: #3c3c44 ;
+    border-radius: 60px;
+    text-align: center;
+
+}
+button {
+    padding: 10px;
+    border-radius: 50px;
+    border-color: #eee;
+}
+input{
+    display: inline-block;
+    padding: 10px;
+    width: 50%;
+    border-radius: 7px;
+    border: 2px solid #3c3c44;
+    margin-top: 10px;
+}
+input:focus{
+    outline: none;
+}
+
+
+#te{
+    font-size: 40px;
+}
+.forecast .today .temp{
+    font-size: 20px;
+    padding-top: 15px;
+    
+
+}
+
+.forecast .weather-forecast{
+    display: flex;
+}
+
+.weather-forecast .weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.weather-forecast .weather-forecast-item .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp{
+    font-weight: 100;
+}
+
+@media only screen and (max-width:730px){
+    .container{
+        padding: 20px;
+    }
+    .forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y:scroll ;
+    }
+    
+    .forecast .today .temp{
+        font-size: 23px;
+    }
+
+    .date-container .time{
+        font-size:50px ;
+    }
+
+    .date-container #am-pm{
+        font-size: 20px;
+    }
+
+    .date-container .date{
+        font-size: 20px;
+    }
+
+    .place-container{
+        text-align: center;
+        margin-top: -200px;
+    }
+
+    .place-container .time-zone{
+        font-size: 20px;
+    }
+
+    .information .others{
+        padding: 12px;
+    }
+
+    .information .others .weather-item{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
