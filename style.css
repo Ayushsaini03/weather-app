@@ -9,7 +9,7 @@
     
 }
 section{
-    background: url('https://wallpapercave.com/wp/wp6810632.jpg');
+    background: url('https://wallpaperaccess.com/full/2404271.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,6 +215,7 @@ input:focus{
 @media only screen and (max-width:730px){
     .forecast{
         position: relative;
+        margin-top: 100px;
     }
     section{
         max-height: fit-content;
@@ -265,6 +266,9 @@ input:focus{
 
     .information .others .weather-item{
         font-size: 14px;
+    }
+    .forecast .weather-forecast-item{
+        width: 200px;
     }
 }
 
