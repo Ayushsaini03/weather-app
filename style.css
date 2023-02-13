@@ -222,6 +222,13 @@ input:focus{
     section{
         max-height: fit-content;
     }
+    section{
+        background: url('https://mobimg.b-cdn.net/v3/fetch/72/72a1129d4a31adffb6009fc53df6c254.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
 
     .information .others .properties{
        
