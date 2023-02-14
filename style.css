@@ -233,6 +233,7 @@ input:focus{
 .forecast .weather-forecast{
     display: flex;
     flex-direction: column;
+    
    
 
 }
@@ -243,12 +244,14 @@ input:focus{
     align-items: center;
     justify-content: center;
     margin: 0 10px;
-    border: 1px solid #eee;
+    border: 3px solid #eee;
     border-radius: 10px;
     padding: 15px;
     width: fit-content;
     border-radius: 50px;
     width: 150px;
+    background: rgba(18, 14, 14, 0.367);
+
 }
 
 .weather-forecast .weather-forecast-item .day{
@@ -312,12 +315,13 @@ input:focus{
         align-items: center;
         justify-content: center;
         margin: 0 10px;
-        border: 1px solid #eee;
+        border: 3px solid #eee;
         border-radius: 10px;
         padding: 15px;
         width: fit-content;
         border-radius: 50px;
         width: 150px;
+        background: rgba(18, 14, 14, 0.367) ;
     }
 
     .others{
@@ -363,7 +367,7 @@ input:focus{
     }
 
     .time{
-        font-size:20px ;
+        font-size:30px ;
         text-align: center;
         margin-top: 10px;
     }
@@ -386,7 +390,7 @@ input:focus{
         margin-top: 10px;
     }
     .place-container .time-zone{
-        font-size: 20px;
+        font-size: 40px;
     }
 
     .information .others{
@@ -398,6 +402,7 @@ input:focus{
     }
     .forecast .weather-forecast-item{
         width: 200px;
+        margin-bottom: 10px;
     }
     
 }
@@ -409,7 +414,7 @@ input:focus{
         margin: auto;
         margin-bottom: 20px;
     }
-    #asa{
+    /* #asa{
         display: none;
-    }
+    } */
 }
