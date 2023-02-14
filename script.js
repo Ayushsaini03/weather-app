@@ -18,7 +18,7 @@ setInterval(() => {
     const minutes = time.getMinutes();
     const ampm = hour >=12 ? 'PM' : 'AM'
     
-    time1.innerHTML = (hours2 <10? '0' + hours2 :hours2) + ':' + (minutes < 10? '0' +minutes : minutes) + `<span id="am-pm">${ampm}</span>`
+    time1.innerHTML = (hours2 <10? '0' + hours2 :hours2) + ':' + (minutes < 10? '0' +minutes : minutes) + ' '+  `<span id="am-pm">${ampm}</span>`
 
     date1.innerHTML = days[day] + ' , ' + date+ ' ' + months[month]
 
@@ -107,4 +107,3 @@ function CheckDay(day){
     for(i = 0; i<6; i++){
         document.getElementById("day" + (i+1)).innerHTML = weekday[CheckDay(i)];
     }
-    

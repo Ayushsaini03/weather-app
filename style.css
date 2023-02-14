@@ -20,20 +20,34 @@ body{
     font-family: 'poppins', 'sans-serif';
    
 }  
-
-
-.today img{
-margin-left: 40px;
+.today{
+    margin-top: 20px;
+    justify-content: space-between;
 }
+.other{
+    border: 2px solid #eee;
+    background-color: #3c40447d;
+    border-radius: 100px;
+    padding: 50px;
+    height: fit-content;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: center;
+    color: #eee;
+}
+/* .today img{
+margin-left: 40px;
+} */
 .box{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.today .day{
+/* .today .day{
     margin-left: 35px;
-}
+} */
 .back-video{
     min-height: 100vh;
     min-width: 100vw;
@@ -61,6 +75,7 @@ margin-left: 40px;
 .container{
     padding: 20px 70px;
     color: #fff;
+    /* margin-top: 300px; */
 }
 
 .information{
@@ -73,7 +88,7 @@ margin-left: 40px;
     font-weight: 100;
 }
 
-.date-container .time{
+.time{
     font-size: 70px;
     font-weight: 100; 
 }
@@ -83,26 +98,31 @@ margin-left: 40px;
     margin-left: 20px;
 }
 
-.date-container .date{
-    font-size: 30px;
+.date{
+    font-size: 40px;
+    color: white;
+    font-weight: 200;
 
 }
 
 .place-container{
-    text-align: end;
+    text-align: right;
+    margin-right: 10px;
 }
 
 .place-container .time-zone{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 100;
+    color: white;
 }
 
 .place-container .country{
     font-size: 15px;
     font-weight: 600;
+    color: white;
 }
 
-.information .others{
+.others{
     display: flex;
     flex-direction: column;
     background: rgba(24,24,27,0.6);
@@ -110,34 +130,49 @@ margin-left: 40px;
     border-radius: 15px;
     margin: 15px 0px;
     border: 1.5px solid #eee;
+    font-size: 20px;
+    color: white;
 }
 
-.information .others .properties{
+.others .properties{
     display: flex;
     justify-content: space-between;
   
 }
+.parallel{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.parallel{
+    margin-bottom: 10px;
+}
+.center{
+    text-align: center;
+    width: auto;
+    
+}
 
 .forecast{
-    background: rgba(24,24,27, 0.8);
+    /* background: rgba(24,24,27, 0.8); */
     padding: 20px;
-    position: absolute;
+    
     bottom: 0px;
-    display: flex;
     color: #eee;
-    width: 100%;
+    width: auto;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
+    overflow: hidden;
+}
+.time{
+    color: #eee;
+    text-align: center;
+}
+#current-temp{
+    display: flex;
+}
 
-}
-.today{
-    border: 2px solid #eee;
-    background-color: #3c3c448e;
-    border-radius: 10px;
-    padding: 50px;
-    margin-top: 20px
-}
+
 /* .forecast .today{
     display: flex;
     align-items: center;
@@ -165,12 +200,20 @@ button {
 }
 
 input{
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px;
-    width: 50%;
+    width: 25%;
     border-radius: 7px;
     border: 2px solid #3c3c44;
     margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.404);
+    margin-left: 10px;
+    font-weight: 300;
+    color: #eee;
+    
+}
+input::placeholder{
+    opacity: 1;
 }
 input:focus{
     outline: none;
@@ -189,6 +232,9 @@ input:focus{
 
 .forecast .weather-forecast{
     display: flex;
+    flex-direction: column;
+   
+
 }
 
 .weather-forecast .weather-forecast-item{
@@ -200,7 +246,9 @@ input:focus{
     border: 1px solid #eee;
     border-radius: 10px;
     padding: 15px;
-
+    width: fit-content;
+    border-radius: 50px;
+    width: 150px;
 }
 
 .weather-forecast .weather-forecast-item .day{
@@ -211,13 +259,79 @@ input:focus{
 }
 
 .weather-forecast .weather-forecast-item .temp{
-    font-weight: 100;
+    font-weight: 400;
+    font-size: 12px;
+    width: auto;
 }
 
-@media only screen and (max-width:730px){
+@media only screen and (max-width:1060px){
+    .first{
+       
+        text-align: center;
+    }
+    input{
+        margin: auto;
+    }
+
+
+
+
+    .other{
+        border: 2px solid #eee;
+        background-color: #3c40447d;
+        border-radius: 10px;
+        padding: 10px;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 20px;
+        margin:auto;
+        text-align: center;
+        color: #eee;
+    }
+
+    .parallel{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-bottom: 20px;
+        overflow-y: hidden;
+    }
+   
+    #current-temp{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        background: url('https://wallpaperaccess.com/full/2404271.jpg');
+        min-height: 180vh;
+      
+    }
+    .weather-forecast .weather-forecast-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 15px;
+        width: fit-content;
+        border-radius: 50px;
+        width: 150px;
+    }
+
+    .others{
+        margin: auto;
+        width: 200px;
+        margin-top: 20px;
+    }
+    .fff{
+        margin: auto;
+    }
+
     .forecast{
-        position: relative;
-        margin-top: 100px;
+    
+        margin-top: 30px;
     }
     section{
         max-height: fit-content;
@@ -230,41 +344,47 @@ input:focus{
        
     }
 
-    .information .others .properties{
-       
-        justify-content: space-around;
+    .others .properties{
+       font-size: 10px;       
+       justify-content: space-between;
       
     }
+    
     .container{
         padding: 20px;
     }
     .forecast{
         justify-content: start;
         align-items: none;
-        overflow-y:scroll ;
     }
     
     .forecast .today .temp{
         font-size: 23px;
     }
 
-    .date-container .time{
-        font-size:50px ;
+    .time{
+        font-size:20px ;
+        text-align: center;
+        margin-top: 10px;
     }
 
     .date-container #am-pm{
         font-size: 20px;
     }
 
-    .date-container .date{
+    .date{
         font-size: 20px;
+        text-align: center;
     }
 
-    .place-container{
+    /* .place-container{
         text-align: center;
         margin-top: -200px;
+    } */
+    .place-container{
+        text-align: center;
+        margin-top: 10px;
     }
-
     .place-container .time-zone{
         font-size: 20px;
     }
@@ -279,10 +399,17 @@ input:focus{
     .forecast .weather-forecast-item{
         width: 200px;
     }
+    
 }
 
-
-
-
-
-
+@media only screen and (max-width:466px){
+    .parallel{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #asa{
+        display: none;
+    }
+}
