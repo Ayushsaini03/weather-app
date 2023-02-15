@@ -14,7 +14,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    max-height: 100vh;
+    max-height: fit-content;
 }
 body{
     font-family: 'poppins', 'sans-serif';
@@ -237,6 +237,19 @@ input:focus{
    
 
 }
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgba(40, 29, 29, 0.666);
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 10px;
+    border: solid white;
+    border-radius: 20px;
+
+}
 
 .weather-forecast .weather-forecast-item{
     display: flex;
@@ -305,8 +318,8 @@ input:focus{
         flex-direction: column;
     }
     section{
-        background: url('https://wallpaperaccess.com/full/2404271.jpg');
-        min-height: 180vh;
+        /* background: url('https://wallpaperaccess.com/full/2404271.jpg'); */
+        height: auto;
       
     }
     .weather-forecast .weather-forecast-item{
@@ -341,7 +354,7 @@ input:focus{
         max-height: fit-content;
     }
     section{
-        background: url('https://mobimg.b-cdn.net/v3/fetch/72/72a1129d4a31adffb6009fc53df6c254.jpeg');
+        background: url('https://wallpaperaccess.com/full/1906745.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
