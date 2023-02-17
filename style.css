@@ -274,7 +274,8 @@ input:focus{
         text-align: center;
     }
     input{
-        margin: auto;
+        margin-top: 10px;
+        width: auto;
     }
 
 
