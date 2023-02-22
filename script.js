@@ -31,7 +31,7 @@ var input = document.getElementById("ans");
 input.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
     event.preventDefault();
-    document.getElementById("fuck").click();
+    document.getElementById("b1").click();
   }
 });
 
@@ -59,7 +59,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+city+'&units=metric&
     document.getElementById("te").innerHTML=Number(data.list[0].main.temp)+"°C"
     document.getElementById("min1").innerHTML=Number(data.list[0].main.temp_min)+"°C"
     document.getElementById("max1").innerHTML=Number(data.list[0].main.temp_max)+"°C"
-    document.getElementById("sex").innerHTML=city;
+    document.getElementById("ayush").innerHTML=city;
     document.getElementById("lelo").innerHTML=data.city.country;
 })
 

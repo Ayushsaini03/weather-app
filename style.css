@@ -36,18 +36,14 @@ body{
     text-align: center;
     color: #eee;
 }
-/* .today img{
-margin-left: 40px;
-} */
+
 .box{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-/* .today .day{
-    margin-left: 35px;
-} */
+
 .back-video{
     min-height: 100vh;
     min-width: 100vw;
@@ -173,18 +169,6 @@ margin-left: 40px;
 }
 
 
-/* .forecast .today{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #eee;
-    border-radius: 12px;
-    padding: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.2);
-
-} */
 
 .forecast .today .day{
     padding: 5px 15px;
@@ -200,7 +184,7 @@ button {
 }
 
 input{
-    /* display: inline-block; */
+   
     padding: 10px;
     width: 25%;
     border-radius: 7px;
@@ -307,7 +291,7 @@ input:focus{
         flex-direction: column;
     }
     section{
-        /* background: url('https://wallpaperaccess.com/full/2404271.jpg'); */
+       
         height: auto;
       
     }
@@ -383,10 +367,7 @@ input:focus{
         text-align: center;
     }
 
-    /* .place-container{
-        text-align: center;
-        margin-top: -200px;
-    } */
+   
     .place-container{
         text-align: center;
         margin-top: 10px;
@@ -416,7 +397,5 @@ input:focus{
         margin: auto;
         margin-bottom: 20px;
     }
-    /* #asa{
-        display: none;
-    } */
+    
 }
